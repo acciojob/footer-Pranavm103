@@ -1,1 +1,123 @@
 /* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background: #000;  
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+footer .content {
+  max-width:1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .logo-details .logo_name {
+  font-size: 32px;
+  font-weight: 600;
+}
+.media-icons a {
+  display: inline-block;
+  margin-left: 15px;
+}
+.media-icons a i {
+  font-size: 20px;
+  padding: 10px;
+  background: #222;
+  border-radius: 50%;
+  color: #fff;
+  transition: 0.3s;
+}
+.media-icons a i:hover {
+  background: #555;
+}
+
+.link-boxes{
+	display:flex;
+	justify-content:space-between;
+	margin-top:20px;
+	flex-wrap:wrap;
+}
+.link-boxes .box{
+	width:22%;
+}
+.link-boxes .box .link_name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+}
+ 
+
+.link-boxes .box .link_name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  background: #fff;
+  transition: width 0.35s ease;
+}
+.link-boxes .box .link_name:hover::after {
+  width: 35px;              
+}
+
+.link-boxes .box li {
+  list-style: none;
+  margin: 8px 0;
+}
+
+.link-boxes .box li a {
+  text-decoration: none;
+  color: #cfcfcf;
+  transition: 0.3s;
+}
+
+.link-boxes .box li a:hover {
+  color: #fff;
+}
+.bottom-details {
+  width: 100%;
+  background: #222831;
+  padding: 15px 0;
+}
+.bottom-details .bottom_text {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #cfcfcf;
+  font-size: 14px;
+}
+.bottom-details a {
+  text-decoration: none;
+  color: #cfcfcf;
+}
+
+.bottom-details a:hover {
+  text-decoration: underline;
+}
+@media(max-width:768px){
+	.link-boxes{
+		flex-direction:column;
+	}
+	.link-boxes .box{
+		width:100%;
+		margin-bottom:20px;
+	}
+	.bottom-details .bottom_text {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
